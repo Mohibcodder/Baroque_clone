@@ -42,7 +42,7 @@ function Header() {
     <div className="sticky top-0 z-20 border-b border-black">
       {/* Announcement Bar */}
       <div className={`bg-black text-white p-2 text-center ${announment}`}>
-        WE ARE OFFERING FREE SHIPPING!
+        WE ARE OFFERING FREE SHIPPINGgggggggggggggggg!
       </div>
 
       {/* Sticky Navbar */}
