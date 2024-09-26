@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
@@ -42,7 +42,7 @@ function Header() {
     <div className="sticky top-0 z-20 border-b border-black">
       {/* Announcement Bar */}
       <div className={`bg-black text-white p-2 text-center ${announment}`}>
-        WE ARE OFFERING FREE SHIPPINGgggggggggggggggg!
+        WE ARE OFFERING FREE SHIPPING!
       </div>
 
       {/* Sticky Navbar */}
