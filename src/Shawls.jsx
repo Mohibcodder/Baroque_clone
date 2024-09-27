@@ -23,7 +23,7 @@ function Shawls() {
         a.style.backgroundColor = "#FFFFFF";
         a.style.position = "fixed";
         a.style.top = "70px";
-        a.style.width = "100%"; // Ensure it takes full width when fixed  
+        a.style.width = "100%"; // Ensure it takes full width when fixed
       } else {
         setScroll(false);
         a.style.backgroundColor = "";
@@ -66,26 +66,26 @@ function Shawls() {
       <Header />
 
       <div id='unstiched' className='uppercase font-serif d-flex justify-center items-center text-3xl border border-gray-800 h-48'>
-        <h3>SHAWLS</h3>
+        <h3>Shawls</h3>
       </div>
 
       <div 
         id='main' 
         className={`h-12 uppercase font-mono d-flex justify-center items-center text-xl border border-gray-800 cursor-pointer ${scroll ? 'sticky z-40 w-full' : ''}`}
       >
-        04 products    
+        4 products    
       </div>
 
       {/* <Secondbody /> */}
 
       <>
       <div id="secondpage" style={{ width: "99.3%" }}>
-        {/* START */}
+        {/* START */}     
         <Container>
           <Row>
             {/* FIXED TAG */}
-            <Col sm={3}>
-              <div className=" hidden md:block w-32 mt-11 ">
+            <Col md={4}>
+              <div className=" hidden md:block sticky top-48 ">
               <Accordion className="flex flex-col gap-2">
                 <Accordion.Item eventKey="0">
                   <Accordion.Header className="font-serif tracking-wider">
@@ -109,6 +109,7 @@ function Shawls() {
                   </Accordion.Header>
                   <Accordion.Body>
                     
+
                   <div className="p-4">
       <div className="font-semibold mb-2 text-lg">Price</div>
       <Form className="space-y-4">
@@ -142,7 +143,6 @@ function Shawls() {
         </div>
       </Form>
     </div>
-
                   </Accordion.Body>
                 </Accordion.Item>
               
@@ -196,12 +196,12 @@ function Shawls() {
 
             {/* MAIN IMAGE SHOWER */}
 
-            <Col sm={9}>
+            <Col sm={8}>
               {/* main */}
 
               <Container className="mb-14">
                 <Row>
-                  <Col md={6} className="mt-4">
+                <Col md={6} className="mt-4">
                     <Secondpart
                       img
                       src="https://baroque.pk/cdn/shop/products/38_19.jpg?v=1693402721&width=1000"
@@ -249,7 +249,6 @@ function Shawls() {
                     />
                   </Col>
 
-                  
                 </Row>
               </Container>
 

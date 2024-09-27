@@ -84,7 +84,7 @@ function Readytowear() {
         <Container>
           <Row>
             {/* FIXED TAG */}
-            <Col md={3}>
+            <Col md={4}>
               <div className=" hidden md:block sticky top-48 ">
               <Accordion className="flex flex-col gap-2">
                 <Accordion.Item eventKey="0">
@@ -197,7 +197,7 @@ function Readytowear() {
 
             {/* MAIN IMAGE SHOWER */}
 
-            <Col sm={9}>
+            <Col sm={8}>
               {/* main */}
 
               <Container className="mb-14">
