@@ -28,17 +28,16 @@ function Secondpage() {
         a.style.top = "70px";
       
       
-        a.style.width = "100%"; // Ensure it takes full width when fixed
+        a.style.width = "100%"; 
       } else {
         setScroll(false);
         a.style.backgroundColor = "";
         a.style.position = "";
         a.style.top = "";
-        a.style.width = ""; // Reset width when not fixed
-      }
+        a.style.width = "";   }
     };
 
-    // Debounce the scroll event to improve performance
+   
     const handleScroll = () => {
       window.requestAnimationFrame(ScrollNav);
     };
@@ -48,13 +47,13 @@ function Secondpage() {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []); // Run once when the component mounts
+  }, []); 
 
 
-    // State for handling selected option
+   
     const [selectedOption, setSelectedOption] = useState("");
 
-    // Function to handle change in the select element
+
     const handleChange = (event) => {
       setSelectedOption(event.target.value);
 
@@ -90,7 +89,7 @@ function Secondpage() {
         <Container>
           <Row>
             {/* FIXED TAG */}
-            <Col sm={3}>
+            <Col sm={4}>
               <div className=" hidden md:block sticky top-48 ">
               <Accordion className="flex flex-col gap-2">
                 <Accordion.Item eventKey="0">
@@ -367,19 +366,7 @@ function Secondpage() {
         </Container>
         {/* CLOSED */}
 
-        <div className="flex justify-center mt-4 border-none text-black	">
-                    <Pagination className="pagination text-black	">
-                      <Pagination.Prev className="" />
-                      <Pagination.Item className="decoration-black	">
-                        1
-                      </Pagination.Item>
-                      <Pagination.Item className="">2</Pagination.Item>
-                      <Pagination.Item className="">3</Pagination.Item>
-                      <Pagination.Ellipsis />
-                      <Pagination.Item className="">5</Pagination.Item>
-                      <Pagination.Next className="" />
-                    </Pagination>
-                  </div>
+      
       </div>
 
       <Footer />

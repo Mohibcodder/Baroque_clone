@@ -10,9 +10,9 @@ function Secondpart(props) {
       <Link to="/Thirdpage"> 
   <img className='cursor-pointer ' 
    alt='' 
-  src={currentSrc}  // Use the current image source from state
-  onMouseEnter={() => setCurrentSrc(props.src1)}  // Change image on hover
-  onMouseLeave={() => setCurrentSrc(props.src)}  // Revert back on mouse leave
+  src={currentSrc} 
+  onMouseEnter={() => setCurrentSrc(props.src1)} 
+  onMouseLeave={() => setCurrentSrc(props.src)}  
   /></Link>
     <div className='text-center'>
     <p> {props.title} </p>

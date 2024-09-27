@@ -9,7 +9,8 @@ function Mainpic(props) {
       <p className='text-4xl text-center mb-4 italic tracking-wide mt-3'>
         {props.title}
       </p>
-   <Link to="/Secondpage">  
+   <div id="data-display">
+    <Link to="/Secondpage">  
      <Button
         className="font-serif"
         style={{
@@ -40,6 +41,7 @@ function Mainpic(props) {
         SHOP NOW
       </Button>
       </Link>
+      </div>
     </div>
 
 
